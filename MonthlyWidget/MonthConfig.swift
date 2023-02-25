@@ -13,6 +13,7 @@ struct MonthConfig {
     let weekdayTextColor: Color
     let dayTextColor: Color
     
+    // Need to update switch-case for each month
     static func determineConfig(from date: Date) -> MonthConfig {
         let monthInt = Calendar.current.component(.month, from: date)
         
